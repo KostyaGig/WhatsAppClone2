@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivtity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo_whatsApp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/whatsapp_logo"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/registerEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваш Email"
+            android:layout_margin="25dp"
+            android:textColorHint="@android:color/black"
+            android:background="@drawable/edit_text"
+            android:textColor="@android:color/black"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="30dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/registerPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваш Password"
+            android:layout_margin="25dp"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:paddingLeft="30dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_block"
+            android:drawablePadding="10dp"/>
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Регистрация"
+            android:background="@drawable/button_register"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Вход"
+            android:background="@drawable/button_register"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Уже есть аккаунт?Войти"
+        android:textSize="20sp"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+</RelativeLayout>

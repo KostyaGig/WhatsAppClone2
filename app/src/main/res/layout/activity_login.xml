@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    tools:context=".LoginActivity">
+
+
+    <Button
+        android:id="@+id/loginTitleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:maxLines="1"
+        android:text="Введите свой номер телефона"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitleButton"
+        android:padding="20dp"
+        android:text="WhatsApp отправит Sms - сообщение,чтобы подтвредить ваш номер телефона"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/loginEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="Номер телефона"
+        android:textColorHint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginEditText"
+        android:padding="20dp"
+        android:text="Мобильный оператор может взимать плату за Sms - сообщение"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/loginNextButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Далее"
+        android:textColor="@android:color/white" />
+
+
+
+    <EditText
+        android:id="@+id/loginVerificationEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Введите код для подтверждения"
+        android:textColorHint="@android:color/black"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/loginVerificationButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginNextButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Подтвердить"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/loginRegisterEmailButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Регистрация с email"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

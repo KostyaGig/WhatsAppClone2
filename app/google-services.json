@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "139484216112",
+    "firebase_url": "https://whatsap0p.firebaseio.com",
+    "project_id": "whatsap0p",
+    "storage_bucket": "whatsap0p.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139484216112:android:0b8991a8d8deb99e7de6f5",
+        "android_client_info": {
+          "package_name": "com.kostya_zinoviev.whatsap0p"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139484216112-69kufv4bfvfgs238ufnu4r6v5fgabsmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kostya_zinoviev.whatsap0p",
+            "certificate_hash": "66d8a1bf71642c2b94875d5602a7d5f65b1d70b7"
+          }
+        },
+        {
+          "client_id": "139484216112-arlruhut63qs4b7iut707blesa68embv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBDFAhdMYUNTjiaiNnr8qdPd21FaHvEC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139484216112-arlruhut63qs4b7iut707blesa68embv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

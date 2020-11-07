@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Добро пожаловать в WhatsApp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/welcomeImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/welcome_whats_app" />
+
+    <Button
+        android:id="@+id/agreeButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Принять и продолжить"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Нажмите принять и продолжить,чтобы согласится с"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/politica_conf"
+        />
+
+    <TextView
+        android:id="@+id/politica_conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/agreeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="10sp"
+        android:text="Правилами пользования и политикой конфиденциальности" />
+</RelativeLayout>
